@@ -18,8 +18,8 @@ import java.util.Arrays;
 public class WebConfig {
 
     private static final int CORS_FILTER_ORDER = -102;
-    @Value("${domain.name}")
-    private String domain;
+   
+    private String domain  = "http://lb-1-2002984447.us-east-1.elb.amazonaws.com/";
     @Bean
     public FilterRegistrationBean corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
